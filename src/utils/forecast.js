@@ -10,8 +10,10 @@ const forecast = (latitude, longitude, callback) => {
             callback('Not found location', undefined)
         } else {
             callback(undefined, {
-               temperature: body.currently.temperature,
-               possibility: body.currently.precipProbability
+                temperature: body.currently.temperature,
+                possibility: body.currently.precipProbability,
+                humidity: body.currently.humidity,
+                windSpeed: body.currently.windSpeed
             })
         }
     })

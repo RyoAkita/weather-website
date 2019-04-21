@@ -22,15 +22,26 @@ header {
     margin-bottom: 48px;
 }
 
-h1{
-    font-size: 64px;
-    margin-bottom: 16px;
+#title {
+  position: relative;
+  padding: 0.2em 0.5em;
+  background: -webkit-linear-gradient(to right, rgb(106, 133, 252), #94ddff);
+  background: linear-gradient(to right, rgb(106, 133, 252), #94ddff);
+  color: white;
+  font-weight: lighter;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+}
+
+.headBlock {
+    width: 80%
 }
 
 header a {
     color: #888;
     margin-right: 16px;
     text-decoration: none;
+    border-bottom: 1px solid #94ddff;
+    font-size: 20px;
 
 }
 
@@ -40,7 +51,7 @@ header a:hover {
 }
 
 img {
-    width: 250px;
+    border-radius: 50%;
 }
 
 .main-content {
@@ -58,4 +69,12 @@ button {
     background:  #888;
     color: white;
     padding: 8px;
+}
+
+button:hover {
+    background:  #9f94ff;
+}
+
+p {
+    font-size: 25px;
 }
